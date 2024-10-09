@@ -45,11 +45,13 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <nav class="navbar-nav mr-auto py-0">
                                 <a href="#Home" class="nav-item nav-link" class="active">Home</a>
-                                <a href="#About" class="nav-item nav-link" class="active">About</a>
-                                <a href="#Gallery" class="nav-item nav-link" class="active">Gallery</a>
-                                <a href="#Rooms" class="nav-item nav-link" class="active">Rooms</a>
-                                <a href="#services" class="nav-item nav-link" class="active">service</a>
-                                <a href="#Contact" class="nav-item nav-link" class="active">Contact</a>
+                                <a href="#About" class="nav-item nav-link" class="active">Sobre nós</a>
+                                <a href="#Gallery" class="nav-item nav-link" class="active">Pontos Turísticos</a>
+                                <a href="#Rooms" class="nav-item nav-link" class="active">Acomodações</a>
+                                <a href="#recreative" class="nav-item nav-link" class="active">Área Recreativa</a>
+                                <a href="#promotions" class="nav-item nav-link" class="active">Promoções</a>
+                                <a href="#pool" class="nav-item nav-link" class="active">Refeitório e Piscina</a>
+                                <a href="#Contact" class="nav-item nav-link" class="active">Fale Conosco</a>
                             </nav>
                         </div>
                     </div>
@@ -63,7 +65,7 @@
                 <div class="carousel-inner">
         
                     <div class="carousel-item active">
-                        <img src="/assest/images/homeImage1.jpg" alt="" class="w-100">
+                        <img src="/assest/images/nature.jpg" alt="" class="w-100">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Cottage Chalés</h6>
@@ -74,18 +76,18 @@
                     </div>
         
                     <div class="carousel-item">
-                        <img src="/assest/images/Food.jpg" alt="" class="w-100">
+                        <img src="/assest/images/gallery 1.jpg" alt="" class="w-100">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Cottage Chalés</h6>
-                                <h2 class="display-3 text-white mb-4 animated slideInDown">Desfrute de deliciosas refeições caseiras</h2>
+                                <h2 class="display-3 text-white mb-4 animated slideInDown">Desfrute de momentos incríveis à dois </h2>
                                 <a href="#Rooms" class="btn btn-light btn-sm py-2 px-3 animated slideInRight">Reserve um quarto!</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="/assest/images/homeImage3.jpg" alt="" class="w-100">
+                        <img src="/assest/images/mountain.jpg" alt="" class="w-100">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Cottage Chalés</h6>
@@ -96,7 +98,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="/assest/images/home3.jpg" alt="" class="w-100">
+                        <img src="/assest/images/homeImage3.jpg" alt="" class="w-100">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Cottage Chalés</h6>
@@ -180,6 +182,7 @@
                 </div>
             </div>
         </div>
+     
 
         <!-- =========================== Sobre Nós Section ===========================  -->
         <div class="container-xxl py-5 " id="About">
@@ -255,60 +258,153 @@
         </div>
 
         <!-- =========================== Pontos Turísticos Section ===========================  -->
-        <div class="container-xxl" id="Gallery">
-            <div class="container">
-                <div class="text-center wow fadeIn">
-                    <h6 class="section-title text-center text-primary text-uppercase">Conheça nossos Pontos Turísticos</h6>
-                    <h1 class="mb-5">Pontos Turísticos</span></h1>
+         
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refeitório e Piscinas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .container-xxl {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        h2 span {
+            color: #007bff;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; 
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                padding-bottom: 56.25%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-xxl py-5" id="Gallery">
+        <div class="container">
+            <div class="text-center wow animate__animated animate__fadeIn">
+                <h6 class="section-title text-center text-primary text-uppercase">Pontos Turisticos</h6>
+                <h2 class="mb-5">Veja Nossos <span class="text-primary text-uppercase">Pontos Turisticos</span></h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    <h1 class="mb-1"><span class="text-primary text-uppercase">Refúgio Natural </span> Um Chalé Conectado a Natureza </h1>
+                    <br>
+                    <p class="mb-1">Esse chalé simples e aconchegante, no meio de um vasto campo verde. Ao redor, a paisagem é composta por campos que se estendem até onde a vista alcança, criando um ambiente tranquilo e aberto. Um lago calmo, com águas claras, reflete o céu azul e as árvores ao redor, trazendo uma sensação de paz. Ao amanhecer, uma leve névoa cobre o lago, como se a natureza estivesse acordando devagar, junto com o canto dos pássaros.
+                        O chalé é feito de madeira e pedras, integrando-se bem ao ambiente. Grandes janelas de vidro permitem que a luz natural entre e, de qualquer parte da casa, é possível apreciar a vista dos campos, das árvores e do lago.
+                        Animais selvagens circulam livremente pelos arredores, tornando o lugar ainda mais especial. Pássaros coloridos voam pelo campo e pousam nas árvores, criando um belo cenário. À noite, o som dos grilos e, de vez em quando, o pio de uma coruja são os únicos ruídos, fazendo deste lugar um refúgio para quem quer fugir do ritmo da cidade.
+                        Esse chalé não é apenas um lar, mas um lugar em sintonia com a natureza. Aqui, o tempo parece passar mais devagar, permitindo que você aprecie a presença dos animais, a brisa suave e a tranquilidade do lago, tudo em harmonia com o ambiente ao redor.
+                          
+                                     
                 </div>
-                <div class="gallery">
-                    <div class="gallery1">
-                        <img src="/assest/images/gallery 1.jpg" >
-                        <img src="/assest/images/gallery 2.jpg" >
-                        <img src="/assest/images/gallery 3.jpg" >
-                    </div>
+            </div>
 
-                    <div class="gallery1">
-                        <img src="/assest/images/gallery 4.jpg" >
-                        <img src="/assest/images/gallery 5.jpg" >
-                        <img src="/assest/images/gallery 6.jpg" >
+            <div class="row g-4 mt-4">
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico1.jpg" alt="Piscina 1" class="img-fluid rounded wow animate__animated animate__zoomIn">
                     </div>
-
-                    <div class="gallery1">
-                        <img src="/assest/images/gallery 7.jpg" >
-                        <img src="/assest/images/gallery 8.jpg" >
-                        <img src="/assest/images/gallery 9.jpg" >
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico2.jpg" alt="Piscina 2" class="img-fluid rounded wow animate__animated animate__zoomIn">
                     </div>
-
-                    <div class="gallery1">
-                        <img src="/assest/images/gallery 10.jpg" >
-                        <img src="/assest/images/gallery 11.jpg" >
-                        <img src="/assest/images/gallery 12.jpg" >
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico 88.jpg" alt="Piscina 3" class="img-fluid rounded wow animate__animated animate__zoomIn">
                     </div>
-                
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico4.jpg" alt="Piscina 4" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico5.jpg" alt=Piscina 5" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="image-container">
+                        <img src="/assest/images/turistico6.jpg" alt="Piscina 6" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
 
         <!-- =========================== Acomodações Section ===========================  -->
-        <div class="container-xxl py-5 " id="Rooms">
-            <div class="container ">
+        <div class="container-xxl py-5" id="Rooms">
+            <div class="container">
                 <div class="text-center wow fadeIn">
-                    <h6 class="section-title text-center text-primary text-uppercase">Nossas acomodações</h6>
+                    <h6 class="section-title text-center text-primary text-uppercase">Nossas Acomodações</h6>
                     <h1 class="mb-5">Veja nossas <span class="text-primary text-uppercase">Acomodações</span></h1>
                 </div>
-
+        
                 <div class="row g-4">
-
+                    <!-- Junior Suite -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="rooms-item shadow rounded overflow-hidden ">
-                            <div class="position-relative">
-                                <img src="/assest/images/hotel-room.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$120/Night</small>
+                        <div class="rooms-item shadow rounded overflow-hidden">
+                            <div id="carouselJuniorSuite" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/assest/images/chale_01.jpg" alt="Suíte Júnior" class="img-fluid" loading="lazy">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Suíte Júnior</h5>
+                                            <p>Desfrute de conforto e elegância.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chale_mini_bar.jpg" alt="Suíte Júnior - Imagem 2" class="img-fluid" loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chale_02.jpg" alt="Suíte Júnior - Imagem 3" class="img-fluid" loading="lazy">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJuniorSuite" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselJuniorSuite" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4">$120/noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Junior Suite</h5>
+                                    <h5 class="mb-0">Suíte Júnior</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -317,31 +413,52 @@
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
                                 </div>
-
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Cama</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Banheiro</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
-
-                                <p class="text-body mb-3">luxurious bedding, a mini-bar, and a well-equipped work desk. With more space than a standard room,ideal for travelers seeking a touch of indulgence during their stay.</p>
+                                <p class="text-body mb-3">Camas luxuosas, mini-bar e uma mesa de trabalho bem equipada. Com mais espaço que um quarto padrão, ideal para viajantes que buscam um toque de indulgência durante a estadia.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                    <a href="#" class="btn btn-sm btn-primary rounded py-2 px-4">Ver Detalhes</a>
+                                    <a href="#" class="btn btn-sm btn-dark rounded py-2 px-4">Reservar Agora</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+        
+                    <!-- Executive Suite -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="rooms-item shadow rounded overflow-hidden ">
-                            <div class="position-relative">
-                                <img src="/assest/images/hotel-room-2.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$150/Night</small>
+                        <div class="rooms-item shadow rounded overflow-hidden">
+                            <div id="carouselExecutiveSuite" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/assest/images/chalezin_01.jpg" alt="Suíte Executiva" class="img-fluid" loading="lazy">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Suíte Executiva</h5>
+                                            <p>Ideal para viajantes de negócios.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chalezin_02.jpg" alt="Suíte Executiva - Imagem 2" class="img-fluid" loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chalezin_03.jpg" alt="Suíte Executiva - Imagem 3" class="img-fluid" loading="lazy">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExecutiveSuite" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExecutiveSuite" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4">$150/noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Executive Suite</h5>
+                                    <h5 class="mb-0">Suíte Executiva</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -350,31 +467,52 @@
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
                                 </div>
-
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Camas</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Banheiros</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
-
-                                <p class="text-body mb-3"> a separate living area, a spacious bedroom with premium bedding, and an elegant bathroom with upscale. Ideal for business travelers.</p>
+                                <p class="text-body mb-3">Área de estar separada, quarto espaçoso com roupa de cama premium e banheiro elegante com acabamentos sofisticados. Ideal para viajantes de negócios.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                    <a href="#" class="btn btn-sm btn-primary rounded py-2 px-4">Ver Detalhes</a>
+                                    <a href="#" class="btn btn-sm btn-dark rounded py-2 px-4">Reservar Agora</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+        
+                    <!-- Super Deluxe -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
-                        <div class="rooms-item shadow rounded overflow-hidden ">
-                            <div class="position-relative">
-                                <img src="/assest/images/pexels-pixabay-279746.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$200/Night</small>
+                        <div class="rooms-item shadow rounded overflow-hidden">
+                            <div id="carouselSuperDeluxe" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/assest/images/chalezao_01.jpg" alt="Super Deluxe" class="img-fluid" loading="lazy">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Super Deluxe</h5>
+                                            <p>Luxo e conforto em cada detalhe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chalezao_02.jpg" alt="Super Deluxe - Imagem 2" class="img-fluid" loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assest/images/chalezao_03.jpg" alt="Super Deluxe - Imagem 3" class="img-fluid" loading="lazy">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSuperDeluxe" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSuperDeluxe" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4">$200/noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Super Delux</h5>
+                                    <h5 class="mb-0">Super Deluxe</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -383,21 +521,20 @@
                                         <small class="fa fa-star text-primary"></small>
                                     </div>
                                 </div>
-
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Camas</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Banheiros</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
-
-                                <p class="text-body mb-3">living areas, multiple bedrooms with premium bedding, and lavish bathrooms adorned with upscale amenities such as whirlpool baths or rainfall showers.</p>
+                                <p class="text-body mb-3">Áreas de estar, múltiplos quartos com roupas de cama premium e banheiros luxuosos decorados com amenidades sofisticadas, como banheiras de hidromassagem ou chuveiros de chuva.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                    <a href="#" class="btn btn-sm btn-primary rounded py-2 px-4">Ver Detalhes</a>
+                                    <a href="#" class="btn btn-sm btn-dark rounded py-2 px-4">Reservar Agora</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
                 </div>
@@ -508,7 +645,7 @@
         </div>
 
         <!-- =========================== Área Recreativa Section ===========================  -->
-        <div class="container-xxl py-5" id="services">
+        <div class="container-xxl py-5" id="recreative">
             <div class="container">
                 <div class="text-center wow fadeInUp">
                     <h6 class="section-title text-center text-primary text-uppercase">Nossa área Recreativa</h6>
@@ -521,12 +658,12 @@
                         <a href="" class="service-item rounded " style="text-decoration: none; color: inherit;">
                             
                                 <div class="position-relative">
-                                    <img src="/assest/images/hotel-room-2.jpg" alt="" class="img-fluid">        
+                                    <img src="/assest/images/churrasqueira-chale.jpg" alt="" class="img-fluid">        
                                 </div>
                                 <br>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
+                            <h5 class="mb-3">Churrasqueira</h5>
                             <p class="text-body mb-0 ">
-                                Standard rooms offer basic amenities suitable for solo travelers or couples, while deluxe rooms provide added luxury with spacious accommodations and premium features. 
+                                O chalé conta com uma área de churrasqueira perfeita para criar momentos memoráveis. Esta área está equipada com uma churrasqueira de alta qualidade, ideal para grelhar suas carnes e vegetais preferidos. A mesa espaçosa acomoda confortavelmente até 4 pessoas.
                             </p>
                         </a>
                     </div>
@@ -535,12 +672,12 @@
                         <a href="" class="service-item rounded " style="text-decoration: none; color: inherit;">
                             
                                 <div class="position-relative">
-                                    <img src="/assest/images/hotel-room-2.jpg" alt="" class="img-fluid">        
+                                    <img src="/assest/images/Sala-de-Jogos-chale.jpg" alt="" class="img-fluid">        
                                 </div>
                                 <br>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
+                            <h5 class="mb-3">Espaço para Jogos</h5>
                             <p class="text-body mb-0 ">
-                                Standard rooms offer basic amenities suitable for solo travelers or couples, while deluxe rooms provide added luxury with spacious accommodations and premium features. 
+                                Nossa área de jogos internos foi projetada para proporcionar entretenimento sem fim para toda a família, independentemente da idade ou do clima. Relaxe e aproveite momentos inesquecíveis, repletos de risadas e competição amigável. 
                             </p>
                         </a>
                     </div>
@@ -549,12 +686,12 @@
                         <a href="" class="service-item rounded " style="text-decoration: none; color: inherit;">
                             
                                 <div class="position-relative">
-                                    <img src="/assest/images/hotel-room-2.jpg" alt="" class="img-fluid">        
+                                    <img src="/assest/images/trilhas-chale.jpg" alt="" class="img-fluid">        
                                 </div>
                                 <br>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
+                            <h5 class="mb-3">Caminho para Trilha</h5>
                             <p class="text-body mb-0 ">
-                                Standard rooms offer basic amenities suitable for solo travelers or couples, while deluxe rooms provide added luxury with spacious accommodations and premium features. 
+                                Além disso, oferecemos trilhas no nosso chalé. Você será surpreendido com vistas panorâmicas de tirar o fôlego, rios cristalinos, florestas densas e uma incrível variedade de fauna e flora. Perfeito para os amantes da natureza. 
                             </p>
                         </a>
                     </div>
@@ -563,7 +700,7 @@
         </div>
 
         <!-- =========================== Promoções Section ===========================  -->
-        <div class="container-xxl py-5 " id="Rooms">
+        <div class="container-xxl py-5 " id="promotions">
             <div class="container ">
                 <div class="text-center wow fadeIn">
                     <h6 class="section-title text-center text-primary text-uppercase">Nossas Promoções</h6>
@@ -575,12 +712,12 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="rooms-item shadow rounded overflow-hidden ">
                             <div class="position-relative">
-                                <img src="/assest/images/hotel-room.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$120/Night</small>
+                                <img src="/assest/images/Cottage_03promocao.jpg" alt="" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">R$100/Noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Junior Suite</h5>
+                                    <h5 class="mb-0 ">Suite Eco</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -591,15 +728,15 @@
                                 </div>
 
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Camas</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Banheiro</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
 
-                                <p class="text-body mb-3">luxurious bedding, a mini-bar, and a well-equipped work desk. With more space than a standard room,ideal for travelers seeking a touch of indulgence during their stay.</p>
+                                <p class="text-body mb-3">Oferecemos um chalé luxuoso, com roupa de cama de alta qualidade, frigobar e uma mesa de trabalho bem equipada.  este chalé é ideal para viajantes que buscam contato com natureza. Desfrute de momentos de tranquilidade e conexão com o exterior, enquanto se permite relaxar e trabalhar em um espaço que combina conforto e serenidade.
                                 <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">Ver Detalhes</a>
+                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Reserve Agora</a>
                                 </div>
                             </div>
                         </div>
@@ -608,12 +745,12 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="rooms-item shadow rounded overflow-hidden ">
                             <div class="position-relative">
-                                <img src="/assest/images/hotel-room-2.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$150/Night</small>
+                                <img src="/assest/images/Cottage_01promocao.jpg" alt="" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">R$135/Noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Executive Suite</h5>
+                                    <h5 class="mb-0 ">Suite Cottage</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -624,15 +761,19 @@
                                 </div>
 
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Cama</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Banheiro</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
 
-                                <p class="text-body mb-3"> a separate living area, a spacious bedroom with premium bedding, and an elegant bathroom with upscale. Ideal for business travelers.</p>
-                                <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                <p class="text-body mb-3"> Este espaço oferece uma área de estar separada, um quarto espaçoso com roupa de cama premium e um banheiro elegante. Ideal para viajantes de negócios, combina conforto e luxo, proporcionando um refúgio perfeito após um dia intenso.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="d-flex justify-content-between">
+                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">Ver Detalhes</a>
+                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Reserve Agora</a>
                                 </div>
                             </div>
                         </div>
@@ -641,12 +782,12 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="rooms-item shadow rounded overflow-hidden ">
                             <div class="position-relative">
-                                <img src="/assest/images/pexels-pixabay-279746.jpg" alt="" class="img-fluid">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">$200/Night</small>
+                                <img src="/assest/images/Cottage_02promocao.jpg" alt="" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded px-3 ms-4 ">R$190/Noite</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0 ">Super Delux</h5>
+                                    <h5 class="mb-0 ">Cottage Deluxe</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -657,15 +798,16 @@
                                 </div>
 
                                 <div class="d-flex mb-3">
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 camas</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Banheiros</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
                                 </div>
 
-                                <p class="text-body mb-3">living areas, multiple bedrooms with premium bedding, and lavish bathrooms adorned with upscale amenities such as whirlpool baths or rainfall showers.</p>
+                                <p class="text-body mb-3">Este chalé encantador, situado em meio à natureza, oferece áreas de estar aconchegantes e um quarto aconchegante, com roupas de cama exclusivas do Chalé. Adornados com comodidades como uma piscina com cascata, proporcionando um toque de relaxamento em um ambiente tranquilo e rodeado pela beleza natural.
+                                    <br><br>
                                 <div class="d-flex justify-content-between">
-                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">View Detail</a>
-                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Book Now</a>
+                                    <a href="" class="btn btn-sm btn-primary rounded py-2 px-4 ">Ver Detalhes</a>
+                                    <a href="" class="btn btn-sm btn-dark rounded py-2 px-4 ">Reserve Agora</a>
                                 </div>
                             </div>
                         </div>
@@ -674,235 +816,350 @@
             </div>
         </div>
 
-        <!-- =========================== Refeitório/Piscina Section ===========================  -->
-        <div class="container-xxl py-5 " id="About">
-            <div class="container">
-                <div class="text-center wow fadeIn">
-                    <h6 class="section-title text-center text-primary text-uppercase">Nosso refeitório e piscinas</h6>
-                    <h2 class="mb-5">Veja nosso <span class="text-primary text-uppercase">Refeitório e Piscinas</span></h2>
-                </div>
-                <div class="row g-5 align-items-center ">
-                    <div class="col-lg-6 ">
-                        <h1 class="mb-4"><span class="text-primary text-uppercase">Royal Oasis </span>Resort</h1>
-                        <p class="mb-4">Welcome to Royal Oasis Resort, where luxury meets tranquility. Nestled amidst breathtaking natural  beauty,   our resort offers an unparalleled escape from the hustle and bustle of everyday life.
-    
-                            As you step into our enchanting oasis, you'll be greeted by lush greenery, pristine beaches, and stunning panoramic views that stretch as far as the eye can see. Whether you're seeking a romantic getaway, a family vacation, or a rejuvenating retreat, our resort caters to every guest's needs with unmatched hospitality and world-class amenities.
-                    
-                            
-    
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-end">
-                                <img src="/assest/images/gallery 13.jpg" alt="" style="margin-top: 25%;" class="img-fluid rounded w-75 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-start">
-                                <img src="/assest/images/gallery 14.jpg" alt="" class="img-fluid rounded w-100 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-end">
-                                <img src="/assest/images/gallery 15.jpg" alt="" class="img-fluid rounded w-50 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-start">
-                                <img src="/assest/images/gallery 17.jpg" alt="" class="img-fluid rounded w-75 wow zoomIn hover-zoom">
-                            </div>
-    
-                            <div class="col-6 text-end">
-                                <img src="/assest/images/homeImage2.jpg" alt="" style="margin-top: 25%;" class="img-fluid rounded w-75 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-start">
-                                <img src="/assest/images/homeImage3.jpg" alt="" class="img-fluid rounded w-100 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-end">
-                                <img src="/assest/images/pexels-pixabay-258154.jpg" alt="" class="img-fluid rounded w-50 wow zoomIn hover-zoom">
-                            </div>
-                    
-                            <div class="col-6 text-start">
-                                <img src="/assest/images/pexels-pixabay-279746.jpg" alt="" class="img-fluid rounded w-75 wow zoomIn hover-zoom">
-                            </div>
+<!-- =========================== Refeitório/Piscina Section ===========================  -->
 
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-        <!-- =========================== Fale conosco Section ===========================  -->
-        <div class="text-center wow fadeInUp">
-            <h6 class="section-title text-center text-primary text-uppercase">Fale conosco</h6>
-            <h1 class="mb-5">Tire suas <span class="text-primary text-uppercase">Dúvidas</span></h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refeitório e Piscinas</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    .container-xxl {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    h2 span {
+        color: #007bff;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 75%; 
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+        .image-container {
+            padding-bottom: 56.25%; 
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container-xxl py-5" id="pool">
+    <div class="container">
+        <div class="text-center wow animate__animated animate__fadeIn">
+            <h6 class="section-title text-center text-primary text-uppercase">Nosso refeitório e piscinas</h6>
+            <h2 class="mb-5">Veja nosso <span class="text-primary text-uppercase">Refeitório e Piscinas</span></h2>
         </div>
-        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn">
-            
-            <div class="container">
-                <div class="owl-carousel testimonial-carousel py-5" style="display: flex;">
-
-
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>I recently had the pleasure of staying at the Royal Oasis Resort, and I must say it was an unforgettable experience. From the moment I arrived, I was greeted with warmth and hospitality that truly made me feel like royalty.</p>
-                        <div class="d-flex align-items-center">
-                            <img src="assest/images/AboutPage.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
-
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Chamith Kavinda</h6>
-                                <small>Developer</small>
-                            </div>
-                        </div>
-
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
-                    </div>
-
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Outstanding service and top-notch quality! Their attention to detail and customer care are unmatched. Highly recommended!</p>
-                        <div class="d-flex align-items-center">
-                            <img src="assest/images/pexels-thelazyartist-1416971.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
-
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Sadun Mendis</h6>
-                                <small>Businessman</small>
-                            </div>
-                        </div>
-
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
-                    </div>
-
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>A wonderful experience from start to finish. The team was professional, friendly, and went above and beyond to ensure my satisfaction. I couldn't be happier with the results.</p>
-                        <div class="d-flex align-items-center">
-                            <img src="assest/images/pexels-soldiervip-1391498.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
-
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Jenny Alex</h6>
-                                <small>Businessman</small>
-                            </div>
-                        </div>
-
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
-                    </div>
-                </div>
+        
+        <div class="row g-5">
+            <div class="col-lg-12">
+                <h1 class="mb-1"><span class="text-primary text-uppercase">Área Recreativa</span> Refeitório e Piscinas</h1>
+                <br>
+                <p class="mb-1">magine um chalé refinado, onde a sofisticação se entrelaça com a serenidade da natureza. Na entrada, uma impressionante área de piscinas se destaca, a arquitetura, projetada com meticulosa atenção aos detalhes, integra o moderno ao rústico, utilizando materiais naturais que harmonizam os ambientes internos e externos.
+                    O mobiliário, confeccionado em madeira nobre e cuidadosamente trabalhado, transmite elegância e conforto. Espreguiçadeiras de design sofisticado estão dispostas ao redor da piscina, proporcionando um convite ao relaxamento sob o sol. Pérgolas de madeira, adornadas com trepadeiras floridas, oferecem áreas de sombra, perfeitas para momentos de leitura ou conversas tranquilas.
+                    Adjacente à área de lazer, o refeitório configura-se como um verdadeiro convite para uma experiência gastronômica única. Mesas e cadeiras, igualmente produzidas com madeira de alta qualidade, estão estrategicamente dispostas para oferecer privacidade, mantendo uma constante conexão com o entorno natural. Amplas janelas e portas de vidro permitem que a luz natural inunde o espaço, criando um ambiente luminoso e acolhedor. Plantas nativas cuidadosamente dispostas complementam a decoração, reforçando a integração com a natureza.
+                    Cada elemento deste chalé foi planejado para proporcionar uma experiência inigualável, onde o requinte dos móveis e a estética da arquitetura se fundem de maneira impecável com a paisagem natural. Trata-se de um verdadeiro refúgio, onde tranquilidade e luxo coexistem em perfeita harmonia.
             </div>
         </div>
 
-        <script>
-            $(document).ready(function(){
-                $(".testimonial-carousel").owlCarousel({
-                    autoplay: true,
-                    smartSpeed: 1000,
-                    margin: 25,
-                    dots: false,
-                    loop: true,
-                    nav: true,
-                    navText: [
-                        '<i class="bi bi-arrow-left"></i>',
-                        '<i class="bi bi-arrow-right"></i>'
-                    ],
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        768: {
-                            items: 2
-                        }
-                    }
-                });
-            });
-        </script>
-            
-        <!-- =========================== Footer Section ===========================  -->
-
-            <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s" id="Contact">
-                <div class="container pb-5">
-                    <div class="row g-5">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="bg-primary rounded p-4">
-                                <a href="#Home"><h1 class="text-white text-uppercase mb-3">Royal Oasis</h1></a>
-                                                            <a href="http://127.0.0.1:5500/AboutMore.html " target="_blank" class="btn btn-primary py-3 px-5 mt-2 ">Explore More</a>
-                                <p class="text-white mb-0">
-                                     The Best Luxury Hotel in Sri Lanka.Nestled amidst breathtaking natural beauty, our resort offers an unparalleled escape from the hustle and bustle of everyday life.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>213,184 Ak, Galle , Sri Lanka</p>
-                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94 76 210 6834</p>
-                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>RoyalOasisResort@gmail.com</p>
-                            <div class="d-flex pt-2">
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12">
-                            <div class="row gy-5 g-4">
-                                <div class="col-md-6">
-                                    <h6 class="section-title text-start text-primary text-uppercase mb-4 ">Company</h6>
-                                    <a class="btn btn-link" href="">About Us</a>
-                                    <a class="btn btn-link" href="">Contact Us</a>
-                                    <a class="btn btn-link" href="">Privacy Policy</a>
-                                    <a class="btn btn-link" href="">Terms & Condition</a>
-                                    <a class="btn btn-link" href="">Support</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                    <a class="btn btn-link" href="">Food & Restaurant</a>
-                                    <a class="btn btn-link" href="">Spa & Fitness</a>
-                                    <a class="btn btn-link" href="">Sports & Gaming</a>
-                                    <a class="btn btn-link" href="">Event & Party</a>
-                                    <a class="btn btn-link" href="">GYM & Yoga</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row g-4 mt-4">
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser1.jpg" alt="Piscina 1" class="img-fluid rounded wow animate__animated animate__zoomIn">
                 </div>
-                <div class="container">
-                    <div class="copyright">
-                        <div class="row">
-                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="#">Royal Oasis Resort</a> All Right Reserved. 
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-menu">
-                                    <a href="#">Home</a>
-                                    <a href="#">Cookies</a>
-                                    <a href="#">Help</a>
-                                    <a href="#">FQAs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser2.jpg" alt="Piscina 2" class="img-fluid rounded wow animate__animated animate__zoomIn">
                 </div>
-
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser3.jpg" alt="Piscina 3" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser4.jpg" alt="Piscina 4" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser5.jpg" alt="Piscina 5" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="image-container">
+                    <img src="/assest/images/laser6.jpg" alt="Piscina 6" class="img-fluid rounded wow animate__animated animate__zoomIn">
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- bootstrap js file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
-    <!-- js file -->
-    <script src="/js/main.js"></script>
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- owl js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-</body>
-</html>
+</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="text-center wow fadeInUp">
+                <h6 class="section-title text-center text-primary text-uppercase">Fale conosco</h6>
+                <h1 class="mb-5">Tire suas <span class="text-primary text-uppercase">Dúvidas</span></h1>
+            </div>  
+            <br>
+            <br>
+            <br>
+            <div class="container-fluid booking pb-5 wow fadeIn">
+                <div class="container" style="width: 710px;">
+                    <div class="bg-white shadow" style="padding:35px;">
+                        <div class="row g-2">
+                            <div class="col-md-10">
+                                <div class="row g-2">
+                                    <div class="col-md-10 ">
+                                        <!-- input -->
+                                        <!-- data input -->
+                                        <h6 class=" text-uppercase mb-1">Nome</h6>
+                                        <div class="date" id="date1" data-target-input="nearest">
+                                            <input type="text" class="from-control-dateimepicker-input" placeholder="Insira seu Nome" data-target="#date1" date-toggle="datetimepicker" style="width: 618px;"   >
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-10 ">
+                                        <!-- input -->
+                                        <!-- data input -->
+                                        <h6 class=" text-uppercase mb-1">CPF</h6>
+                                        <div class="date" id="date2" data-target-input="nearest">
+                                            <input type="text" class="from-control-dateimepicker-input" placeholder="Digite seu CPF" data-target="#date2" date-toggle="datetimepicker"  style="width: 618px;"  >
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-10">
+                                        <!-- input -->
+                                        <!-- data input -->
+                                        <h6 class=" text-uppercase mb-1">E-mail</h6>
+                                        <div class="date" id="date2" data-target-input="nearest" >
+                                            <input type="text" class="from-control-dateimepicker-input" placeholder="Cottagechales@gmail.com" data-target="#date2" date-toggle="datetimepicker"  style="width: 618px;" >
+                                        </div>
+                                    </div>
+    
+                                    <br>
+                                    <div class="col-md-10">
+                                        <!-- input -->
+                                        <!-- data input -->
+                                        <h6 class=" text-uppercase mb-1">Telefone</h6>
+                                        <div class="date" id="date2" data-target-input="nearest" >
+                                            <input type="text" class="from-control-dateimepicker-input" placeholder="(16) 99999-9999" data-target="#date2" date-toggle="datetimepicker"  style="width: 618px;" >
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12 ">
+                                        <!-- input -->
+                                        <!-- data input -->
+                                        <h6 class=" text-uppercase mb-1">Assunto</h6>
+                                        <div class="date" id="date2" data-target-input="nearest">
+                                            <input type="text" class="from-control-dateimepicker-input" placeholder="Deixe aqui sua mensagem" data-target="#date2" date-toggle="datetimepicker" style="width: 618px; height: 200px;"  >
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <!-- submit button -->
+                            
+                            <div class="col-md-12 ">
+                                <button class="btn btn-primary w-10">Enviar</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn">
+                
+                <div class="container">
+                    <div class="owl-carousel testimonial-carousel py-5" style="display: flex;">
+    
+    
+                        <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                            <p>Recentemente tive o prazer de me hospedar no CottageChalés e devo dizer que foi uma experiência inesquecível. Desde o momento em que cheguei, fui recebido com carinho e hospitalidade que realmente me fizeram sentir como se fosse da realeza.</p>
+                            <div class="d-flex align-items-center">
+                                <img src="assest/images/AboutPage.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
+    
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Gabriel Santos</h6>
+                                    <small>Desenvolvedor</small>
+                                </div>
+                            </div>
+    
+                            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
+                        </div>
+    
+                        <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                            <p>Atendimento diferenciado e qualidade de primeira linha! Sua atenção aos detalhes e atendimento ao cliente são incomparáveis. Altamente recomendado!</p>
+                            <div class="d-flex align-items-center">
+                                <img src="assest/images/pexels-thelazyartist-1416971.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
+    
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Daniel Rodrigues</h6>
+                                    <small>Empresário</small>
+                                </div>
+                            </div>
+    
+                            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
+                        </div>
+    
+                        <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                            <p>Uma experiência maravilhosa do início ao fim. A equipe foi profissional, amigável e fez de tudo para garantir minha satisfação.</p>
+                            <div class="d-flex align-items-center">
+                                <img src="assest/images/pexels-soldiervip-1391498.jpg" alt="" class="img-fluid flex-shrink-0 rounded" style="width: 55px; height: 55px;">
+    
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Rafaela Ferreira</h6>
+                                    <small>Empresária</small>
+                                </div>
+                            </div>
+    
+                            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mn-n1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <script>
+                $(document).ready(function(){
+                    $(".testimonial-carousel").owlCarousel({
+                        autoplay: true,
+                        smartSpeed: 1000,
+                        margin: 25,
+                        dots: false,
+                        loop: true,
+                        nav: true,
+                        navText: [
+                            '<i class="bi bi-arrow-left"></i>',
+                            '<i class="bi bi-arrow-right"></i>'
+                        ],
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            768: {
+                                items: 2
+                            }
+                        }
+                    });
+                });
+            </script>
+                
+            <!-- =========================== Footer Section ===========================  -->
+    
+                <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s" id="Contact">
+                    <div class="container pb-5">
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="bg-primary rounded p-4">
+                                    <a href="#Home"><h2 class="text-white text-uppercase mb-3">Cottage Chalés</h2></a>
+                                                                <a href="http://127.0.0.1:5500/AboutMore.html " target="_blank" class="btn btn-primary py-3 px-5 mt-2 ">Explorar mais</a>
+                                    <p class="text-white mb-0">
+                                        O melhor Chalé de luxo no Bairro Castelo. Situado em meio a uma beleza natural de tirar o fôlego, nosso Chalé oferece uma fuga incomparável da agitação da vida cotidiana.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Contato</h6>
+                                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>R. Dom Bôsco, 466 - Bairro Castelo, Batatais - SP, 14300-900</p>
+                                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+55 16 91083-6834</p>
+                                <p class="mb-2"><i class="fa fa-envelope me-3"></i>Cottagechales@gmail.com</p>
+                                <div class="d-flex pt-2">
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="row gy-5 g-4">
+                                    <div class="col-md-6">
+                                        <h6 class="section-title text-start text-primary text-uppercase mb-4 ">Empresa</h6>
+                                        <a class="btn btn-link" href="">Sobre nós</a>
+                                        <a class="btn btn-link" href="">Contate-nos</a>
+                                        <a class="btn btn-link" href="">política de Privacidade</a>
+                                        <a class="btn btn-link" href="">Termos e Condições</a>
+                                        <a class="btn btn-link" href="">Suporte</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Serviços</h6>
+                                        <a class="btn btn-link" href="">Comida e Restaurante</a>
+                                        <a class="btn btn-link" href="">Spa e Fitness</a>
+                                        <a class="btn btn-link" href="">Sports e Gaming</a>
+                                        <a class="btn btn-link" href="">Evento e Festa</a>
+                                        <a class="btn btn-link" href="">Ginastica e Ioga</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="copyright">
+                            <div class="row">
+                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                    &copy; <a class="border-bottom" href="#">CottageChalés</a> Todos os direitos reservados. 
+                                </div>
+                                <div class="col-md-6 text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <a href="#">Lar</a>
+                                        <a href="#">Cookies</a>
+                                        <a href="#">Ajuda</a>
+                                        <a href="#">FQAs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <!-- bootstrap js file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+        <!-- js file -->
+        <script src="/js/main.js"></script>
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- owl js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    </body>
+    </html>
